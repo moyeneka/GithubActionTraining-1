@@ -11,7 +11,7 @@ jobs:
        - name: list and Read Files
          run: |
               echo "welcome bro"
-              ls ltra
+              ls -ltra
               cat README.md
        - name: Generate ASCII Artwork
          run: cowsay -f dragon "run for cover, I am a DRAGON.... RAAR" >> dragon.txt
