@@ -8,10 +8,15 @@ jobs:
       steps:
        - name: checkout stage
          uses: actions/checkout@v4
-       - name: welcome message
-         run: echo "welcome bro"
+       - name: list and Read Files
+         run: |
+              echo "welcome bro"
+              ls ltra
+              cat README.md
+       - name: Generate ASCII Artwork
+         run: cowsay -f dragon "run for cover, I am a DRAGON.... RAAR" >> dragon.txt
 
-       - name: list files
-         run: ls
-       - name: Read file
-         run: cat README.md
+      #  - name: list files
+      #    run: ls
+      #  - name: Read file
+      #    run: cat README.md
